@@ -1,0 +1,62 @@
+
+typedef struct Circular_Buff  			 
+{
+    uint8_t  CbStart;
+    uint8_t  CbEnd;
+    uint8_t  CbEntries;
+    CAN_MSG_Type  CbDate[BUFFSIZE];//CAN自带的结构体
+}CIRCULAR_Buff;
+
+  Circular_Init(&CAN1RecBuff);              
+  SemRecCan1=OSSemCreate (NULL); 
+  Circular_Init(&CAN2RecBuff);              
+  SemRecCan2=OSSemCreate (NULL); 
+
+typedef struct //自己组织包装的结构体
+{
+    __IO uint32_t tx_head;                /*!< UART Tx ring buffer head index */
+    __IO uint32_t tx_tail;                /*!< UART Tx ring buffer tail index */
+    __IO uint32_t rx_head;                /*!< UART Rx ring buffer head index */
+    __IO uint32_t rx_tail;                /*!< UART Rx ring buffer tail index */
+    __IO uint8_t  tx[UART_RING_BUFSIZE];  /*!< UART Tx data ring buffer */
+    __IO uint8_t  rx[UART_RING_BUFSIZE];  /*!< UART Rx data ring buffer */
+} UART_RING_BUFFER_T;
+
+  __BUF_RESET(rb2.rx_head);
+  __BUF_RESET(rb2.rx_tail);
+  __BUF_RESET(rb2.tx_head);
+  __BUF_RESET(rb2.tx_tail);
+
+  NVIC_SetPriority(UART2_IRQn, ((0x01<<3)|0x01)); 
+
+  NVIC_EnableIRQ(UART2_IRQn);  
+
+  SemRecUart2=OSSemCreate (NULL); 
+
+		
+
+void CAN1Receive(CAN_MSG_Type *data)
+{
+  INT8U err=0;
+  OSSemPend (SemRecCan1,0,&err); 
+  Circular_Read(&CAN1RecBuff,data);
+	
+}
+
+uint8_t Circular_Read( CIRCULAR_Buff *cb_p, CAN_MSG_Type *data )
+{
+   CPU_SR  cpu_sr = (CPU_SR)0;
+   OS_ENTER_CRITICAL();   
+   if( cb_p->CbEntries <= 0 )												 
+    {		
+       OS_EXIT_CRITICAL();;			
+       return CIRCULAR_BUFF_EMPTY;
+    }
+    *data = cb_p->CbDate[cb_p->CbStart] ;						 
+    cb_p->CbEntries --;																   	
+    if( cb_p->CbStart >= BUFFSIZE-1 )	cb_p->CbStart = 0;                            
+    else   cb_p->CbStart++;															 
+    OS_EXIT_CRITICAL();;
+    return CIRCULAR_NO_ERR;
+}
+

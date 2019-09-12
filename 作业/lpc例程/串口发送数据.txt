@@ -1,0 +1,21 @@
+uint32_t UART1Receive(uint8_t *rxbuf, uint32_t buflen)
+{
+  uint_8 *data = (uint8_t *) rxbuf;
+  uint32_t bytes=0;
+  uint8_t err;
+  OSSemPend(SemRecUart1,0,&err);
+  UART_IntConfig(UART_1,UART_INTCFG_RBR,DISABLE);
+ 
+  while((buflen>0)&&(!_BUF_IS_EMPTY(rb1.rx_head,rb1.rx_tail)))
+  { 
+    *data=rb1.rx[rb1.rx_tail];
+    data++;
+    _BUF_INCR(rb1.tx_tail);
+    bytes++;
+    buflen--;
+  }
+  if(){}else{}
+  return bytes;
+
+
+}

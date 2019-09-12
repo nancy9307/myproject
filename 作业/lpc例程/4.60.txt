@@ -1,0 +1,21 @@
+struct DATE
+{
+  unit16   year;
+  unit8    mon;
+  unit8    day;
+};
+struct TIME
+{
+  unit8    hour;
+  unit8    min;
+  unit8    second;
+};
+void GetTime(struct DATE *d,struct TIME *t)
+{
+  d->year=YEAR;
+  d->mon=MONTH;
+  d->day=DAY;
+  t->hour=HOUR;
+  t->min=MIN;
+  t->second=SEC;
+  }

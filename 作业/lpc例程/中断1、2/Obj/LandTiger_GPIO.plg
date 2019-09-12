@@ -1,0 +1,314 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\桌面\EXTINT0-外中断示例\复件 复件 GPIO\LandTiger_GPIO.uvproj
+Project File Date:  11/28/2011
+
+<h2>Output:</h2>
+Build target 'LandTiger_GPIO'
+assembling startup_LPC17xx.s...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+compiling main.c...
+linking...
+Program Size: Code=1200 RO-data=232 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Obj\LandTiger_GPIO.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\EXTINT0-外中断示例\\复件 复件 GPIO\\Obj\\LandTiger_GPIO.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM-OB STM32 compiled Mar 01 2010 17:00:09
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 100 kHz
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: CPU did not halt after bootloader.
+Application running ...
+Build target 'LandTiger_GPIO'
+assembling startup_LPC17xx.s...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+compiling main.c...
+linking...
+Program Size: Code=1200 RO-data=232 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Obj\LandTiger_GPIO.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\EXTINT0-外中断示例\\复件 复件 GPIO\\Obj\\LandTiger_GPIO.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM-OB STM32 compiled Mar 01 2010 17:00:09
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 100 kHz
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: CPU did not halt after bootloader.
+Application running ...
+Build target 'LandTiger_GPIO'
+assembling startup_LPC17xx.s...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+compiling main.c...
+linking...
+Program Size: Code=1236 RO-data=228 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Obj\LandTiger_GPIO.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\EXTINT0-外中断示例\\复件 复件 GPIO\\Obj\\LandTiger_GPIO.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM-OB STM32 compiled Mar 01 2010 17:00:09
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 100 kHz
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: CPU did not halt after bootloader.
+Application running ...
+Build target 'LandTiger_GPIO'
+assembling startup_LPC17xx.s...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+compiling main.c...
+linking...
+Program Size: Code=1284 RO-data=228 RW-data=12 ZI-data=612  
+FromELF: creating hex file...
+".\Obj\LandTiger_GPIO.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\EXTINT0-外中断示例\\复件 复件 GPIO\\Obj\\LandTiger_GPIO.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM-OB STM32 compiled Mar 01 2010 17:00:09
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 100 kHz
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: CPU did not halt after bootloader.
+Application running ...
+Build target 'LandTiger_GPIO'
+assembling startup_LPC17xx.s...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+compiling main.c...
+linking...
+Program Size: Code=1284 RO-data=228 RW-data=12 ZI-data=612  
+FromELF: creating hex file...
+".\Obj\LandTiger_GPIO.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Documents and Settings\\Administrator\\桌面\\EXTINT0-外中断示例\\复件 复件 GPIO\\Obj\\LandTiger_GPIO.AXF" 
+
+JLink info:
+-----------
+DLL: V4.11i, compiled Jan 28 2010 19:55:25
+Firmware: J-Link ARM-OB STM32 compiled Mar 01 2010 17:00:09
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.300V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 100 kHz
+---
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+**JLink Warning: CPU did not halt after bootloader.
+Application running ...

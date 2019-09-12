@@ -1,0 +1,42 @@
+#include"config.h"
+#define BEEPCON 0x00000080
+
+void DelayNS(unit32 dly)
+{ unit32 i;
+  for(;dly>0;dly--)
+     for(i=0;i<5000;i++);
+}
+
+int main(void)
+{ PINSEL0=0x00000000;
+  IO0DIR=BEEPCON;
+  while(1)
+  { IO0SET=BEEPCON;
+    DelayNS(10);
+    IO0CLR=BEEPCON; 
+    DelayNS(10);
+  }
+}
+
+#include"config.h"
+#define BEEPCON  0x00000080
+#define PIN_P014 0x00004000
+
+void DelayNS(unit32 dly)
+{ unit32 i;
+  for(;dly>0;dly--)
+     for(i=0;i<5000;i++);
+}
+
+int main(void)
+{ 
+  PINSEL0=0x00000000;
+  IO0DIR=BEEPCON;
+  while(1)
+  { if((IO0PIN&PIN_P014)!=0)
+    { IO0SET=BEEPCON;
+      DelayNS(10);
+     }
+  }
+  return 0;
+}

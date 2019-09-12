@@ -1,0 +1,17 @@
+Dependencies for Project 'LandTiger_GPIO', Target 'LandTiger_GPIO': (DO NOT MODIFY !)
+F (.\Source\CMSIS\startup\arm\startup_LPC17xx.s)(0x4C974790)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Users\Administrator\Desktop\作业\lpc例程\中断1、2\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.4.0\Device\Include--pd "__UVISION_VERSION SETA 515" --pd "_RTE_ SETA 1" --pd "LPC175x_6x SETA 1"--list .\lis\startup_lpc17xx.lst --xref -o .\obj\startup_lpc17xx.o --depend .\obj\startup_lpc17xx.d)
+F (.\Source\CMSIS\core_cm3.c)(0x4C974790)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\Source\CMSIS\startup\arm -I.\Source\CMSIS -I.\Source\APP-I C:\Users\Administrator\Desktop\作业\lpc例程\中断1、2\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.4.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DLPC175x_6x-o .\obj\core_cm3.o --omf_browse .\obj\core_cm3.crf --depend .\obj\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+F (.\Source\CMSIS\system_LPC17xx.c)(0x4C974790)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\Source\CMSIS\startup\arm -I.\Source\CMSIS -I.\Source\APP-I C:\Users\Administrator\Desktop\作业\lpc例程\中断1、2\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.4.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DLPC175x_6x-o .\obj\system_lpc17xx.o --omf_browse .\obj\system_lpc17xx.crf --depend .\obj\system_lpc17xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (Source\CMSIS\LPC17xx.h)(0x4C974790)
+I (Source\CMSIS\core_cm3.h)(0x4C974790)
+I (Source\CMSIS\system_LPC17xx.h)(0x4C974790)
+F (.\Source\APP\main.c)(0x5D6CDDD4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\Source\CMSIS\startup\arm -I.\Source\CMSIS -I.\Source\APP-I C:\Users\Administrator\Desktop\作业\lpc例程\中断1、2\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.4.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DLPC175x_6x-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (.\Source\CMSIS\LPC17xx.h)(0x4C974790)
+I (.\Source\CMSIS\core_cm3.h)(0x4C974790)
+I (.\Source\CMSIS\system_LPC17xx.h)(0x4C974790)
+I (.\Source\CMSIS\my_bsp.h)(0x53EDE194)
+F (..\..\..\资料\DiscoveryQ2光盘资料\DiscoveryQ2光盘资料\ULM1超声测距模块\App\my_bsp.c)(0x5D6CD7CA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\Source\CMSIS\startup\arm -I.\Source\CMSIS -I.\Source\APP-I C:\Users\Administrator\Desktop\作业\lpc例程\中断1、2\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.4.0\Device\Include-D__UVISION_VERSION="515" -D_RTE_ -DLPC175x_6x-o .\obj\my_bsp.o --omf_browse .\obj\my_bsp.crf --depend .\obj\my_bsp.d)
+F (.\Source\readme.txt)(0x4C974790)()

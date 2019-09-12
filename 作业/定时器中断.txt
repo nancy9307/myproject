@@ -1,0 +1,25 @@
+void init_timer(void)
+ {
+  T0_CTRL->_TCR=0x00;//停止计数
+  T0_CTRL->_MCR=0x3;//设置中断方式
+  T0_CTRL->_PR=12;  //预分频值pclk/(12+1)
+  T0_CTRL->_MR0=1000;//TC的值加到MR0时便产生中断，当主频为13MHZ时候1000个数为1ms
+  T0_CTRL->_TC=0x00; //计数器初始值
+ 
+ }
+void start_timer(void)
+ { 
+  //MIC_CTRL->_MIC_ATR=0x00;//_BIT(16);//设置中断类型为电平触发
+ //MIC_CTRL->_MIC_APR=0x00;_BIT(16);//设置边沿触发方式为上升沿
+ MIC_CTRL->_MIC_ITR=0x00; //IRQ中断
+ MIC_CTRL->_MIC_ER=_BIT(16);//总中断使能
+ T0_CTRL->_T0TCR=0x1;//计数器使能
+}
+void end_timer(void)
+ {
+ T0_CTRL->_T0TCR=0x00;//停止计数
+ T0_CTRL->_T0TC=0x00;
+ MIC_CTRL->_MIC_ER=_BIT(16)&&(0<<16);//关闭中断
+}
+
+LPC_SC->PCONP|= (0x01<<1);
